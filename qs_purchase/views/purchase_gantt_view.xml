@@ -1,0 +1,23 @@
+<odoo>
+
+    <record id="view_purchase_order_gantt" model="ir.ui.view">
+        <field name="name">purchase.order.gantt</field>
+        <field name="model">purchase.order</field>
+        <field name="arch" type="xml">
+
+            <gantt
+                string="Purchase Orders Timeline"
+                date_start="date_order"
+                date_stop="date_planned"
+                default_group_by="partner_id"
+                default_scale="week"
+                color="state"
+                decoration-warning="state == 'draft'"
+                decoration-success="state == 'purchase'"
+                decoration-danger="state == 'cancel'"
+            />
+
+        </field>
+    </record>
+
+</odoo>

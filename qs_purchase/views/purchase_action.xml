@@ -1,0 +1,13 @@
+<odoo>
+
+    <record id="action_purchase_orders_gantt" model="ir.actions.act_window">
+        <field name="name">Purchase Orders</field>
+        <field name="res_model">purchase.order</field>
+        <field name="view_mode">list,kanban,gantt,pivot,calendar,activity</field>
+    </record>
+
+    <record id="purchase.menu_purchase_form_action" model="ir.ui.menu">
+        <field name="action" ref="action_purchase_orders_gantt"/>
+    </record>
+
+</odoo>
