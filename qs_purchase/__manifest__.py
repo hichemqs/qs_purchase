@@ -24,6 +24,7 @@ Long description of module's purpose
         # 'security/ir.model.access.csv',
         'views/purchase_gantt_view.xml',
         'views/purchase_action.xml',
+        'views/mrp_menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

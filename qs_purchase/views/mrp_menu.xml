@@ -1,0 +1,9 @@
+<odoo>
+
+    <menuitem id="menu_mrp_purchases_by_mo"
+              name="Purchases by MO"
+              parent="mrp.menu_mrp_planning"
+              sequence="40"
+              action="action_purchase_mo"/>
+
+</odoo>
