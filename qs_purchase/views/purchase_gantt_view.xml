@@ -6,17 +6,12 @@
         <field name="arch" type="xml">
 
             <gantt
-                string="Purchase Orders Timeline"
-                date_start="date_order"
-                date_stop="date_planned"
-                default_group_by="partner_id"
-                default_scale="week"
-                color="state"
-                decoration-warning="state == 'draft'"
-                decoration-success="state == 'purchase'"
-                decoration-danger="state == 'cancel'"
-            />
-
+    string="Purchase Orders Timeline"
+    date_start="date_order"
+    date_stop="date_planned"
+    default_group_by="manufacturing_id"
+    default_scale="week"
+    color="state"/>
         </field>
     </record>
 
