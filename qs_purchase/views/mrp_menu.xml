@@ -1,9 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
     <menuitem id="menu_mrp_purchases"
               name="Purchases"
               parent="mrp.mrp_planning_menu_root"
-              action="action_purchase_mo"
+              action="purchase.purchase_form_action"
               sequence="50"/>
+
+    <menuitem id="menu_as_global_planning"
+              name="Global Planning"
+              parent="mrp.mrp_planning_menu_root"
+              action="action_as_planning"
+              sequence="10"/>
 
 </odoo>

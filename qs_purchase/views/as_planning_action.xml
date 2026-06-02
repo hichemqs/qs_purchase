@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_as_planning" model="ir.actions.act_window">
+        <field name="name">Global Planning</field>
+        <field name="res_model">as.planning.line</field>
+        <field name="view_mode">gantt,list</field>
+        <field name="context">{'search_default_group_by_record_type': 1}</field>
+    </record>
+
+</odoo>

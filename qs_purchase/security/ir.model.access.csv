@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_qs_purchase_qs_purchase,qs_purchase.qs_purchase,model_qs_purchase_qs_purchase,base.group_user,1,1,1,1
+access_as_planning_line_user,as.planning.line user,model_as_planning_line,base.group_user,1,0,0,0

@@ -1,0 +1,23 @@
+<odoo>
+
+    <record id="purchase_order_search_mo" model="ir.ui.view">
+        <field name="name">purchase.order.search.mo</field>
+        <field name="model">purchase.order</field>
+
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter"/>
+
+        <field name="arch" type="xml">
+
+            <xpath expr="//search/group" position="inside">
+
+                <!-- ONLY ONE GROUP BY -->
+                <filter string="Manufacturing Order"
+                        name="group_by_origin"
+                        context="{'group_by': 'origin'}"/>
+
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
